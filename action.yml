@@ -1,6 +1,6 @@
-name: 'Download a Build Artifact'
-description: 'Download a build artifact that was previously uploaded in the workflow by the upload-artifact action'
-author: 'GitHub'
+name: 'Download Build Artifacts to different pathes'
+description: 'Download build artifacts which where previously uploaded in the workflow by the upload-artifact action'
+author: 'jason2866'
 inputs: 
   name:
     description: 'Artifact name'
