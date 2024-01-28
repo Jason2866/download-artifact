@@ -21,9 +21,8 @@ async function downloadArtifact(name: string, path: string): Promise<string> {
     core.info(
       'Creating an extra directory for each artifact that is being downloaded'
     )
-    const downloadResponse = await artifactClient.downloadAllArtifacts(
-      resolvedPath
-    )
+    const downloadResponse =
+      await artifactClient.downloadAllArtifacts(resolvedPath)
     core.info(`There were ${downloadResponse.length} artifacts downloaded`)
     for (const artifact of downloadResponse) {
       core.info(
